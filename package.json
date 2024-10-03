@@ -1,0 +1,48 @@
+{
+  "name": "fastify-convict-env",
+  "version": "2.0.0",
+  "description": "Fastify plugin to parse environment variables",
+  "main": "index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "coverage": "cross-env NAME=fastify-convict-env tap --cov --coverage-report=html",
+    "lint": "standard --fix | snazzy",
+    "lint:fix": "standard --fix",
+    "test": "npm run test:unit && npm run test:typescript",
+    "test:typescript": "tsd",
+    "test:unit": "cross-env NAME=fastify-convict-env tap"
+  },
+  "keywords": [
+    "fastify"
+  ],
+  "author": "Romain De coster - @RomainDECOSTER",
+  "license": "MIT",
+  "devDependencies": {
+    "@fastify/pre-commit": "^2.1.0",
+    "@types/node": "^22.7.4",
+    "cross-env": "^7.0.3",
+    "fastify": "^5.0.0",
+    "snazzy": "^9.0.0",
+    "standard": "^17.1.2",
+    "tap": "^21.0.1",
+    "tsd": "^0.31.2",
+    "tsup": "^8.3.0",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "convict": "^6.2.4",
+    "convict-format-with-validator": "^6.2.0",
+    "dotenv": "^16.4.5",
+    "fastify-plugin": "^5.0.1"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "tsd": {
+    "directory": "test/types"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
