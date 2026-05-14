@@ -33,4 +33,4 @@ fastify.register(fastifyConvictEnv, options).ready((err) => {
 })
 ```
 
-This module is a wrapper aroud [convict](https://www.npmjs.com/package/convict) (convict-format-with-validator pre-installed), it will read `.env` file (load with [dotenv](https://www.npmjs.com/package/dotenv))
+This module is a wrapper around [convict](https://www.npmjs.com/package/convict) (convict-format-with-validator pre-installed), it will read `.env` file (load with [dotenv](https://www.npmjs.com/package/dotenv))
