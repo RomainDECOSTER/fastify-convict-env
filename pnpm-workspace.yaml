@@ -1,0 +1,3 @@
+allowBuilds:
+  '@fastify/pre-commit': true
+  esbuild: true
