@@ -16,6 +16,9 @@
     "fastify"
   ],
   "author": "Romain De coster - @RomainDECOSTER",
+  "repository": {
+    "url": "https://github.com/RomainDECOSTER/fastify-convict-env"
+  },
   "license": "MIT",
   "devDependencies": {
     "@fastify/pre-commit": "^2.1.0",
