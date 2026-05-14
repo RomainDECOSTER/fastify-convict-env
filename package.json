@@ -39,9 +39,7 @@
     "lint",
     "test"
   ],
-  "tsd": {
-    "directory": "test/types"
-  },
+  "tsd": {},
   "packageManager": "pnpm@10.33.2",
   "publishConfig": {
     "access": "public"
